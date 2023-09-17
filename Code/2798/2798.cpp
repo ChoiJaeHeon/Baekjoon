@@ -14,7 +14,7 @@ int main() {
         for(int j = i+1; j < num-1; j++)
             for(int k = j+1; k < num; k++)
             {
-                sum = arr[i]+arr[j]+arr[k];
+                sum = arr[i] + arr[j] + arr[k];
                 if(target - sum < min && target - sum >= 0) {
                     min = target - sum;
                     goal = sum;
