@@ -11,9 +11,7 @@ dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 
 def bfs(queue):
-    (i, j) = queue
-    print(i ,j)
-    visited[i][j] = 0
+
     while queue:
         x, y = queue.popleft()
         
@@ -33,6 +31,7 @@ for i in range(N):
     for j in range(M):
         if graph[i][j] == 1 and visited[i][j] == -1:
             start.append((i, j))
+            visited[i][j] = 0
 
 q = deque(start)
 
